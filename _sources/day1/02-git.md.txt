@@ -53,7 +53,7 @@ Then, create a folder for your git lesson.
 ````{tab-set-code} 
 
 ```{code-block} shell
-cd molssi_best_practices
+cd chem_280
 mkdir git-lesson
 cd git-lesson
 ```
@@ -380,7 +380,7 @@ Open `README.md` in your text editor of choice and add the following to the end
 
 ````{tab-set-code}
 ```{code-block} README.md
-This lesson is for the MolSSI Best Practices Workshop.
+This lesson is for the first day of the MSSE bootcamp.
 ```
 ````
 
