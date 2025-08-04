@@ -13,23 +13,23 @@ Pre-Bootcamp: Set-Up
   :file: csv_tables/setup.csv
   :header-rows: 1
 
+
+Day 1
+#######
+
+Lessons
+=======
+.. csv-table:: 
+  :file: csv_tables/day1.csv
+  :header-rows: 1
+
+Discussions and Assignments
+===========================
+.. csv-table:: 
+  :file: csv_tables/day1_assignments.csv  
+  :header-rows: 1
+
 ..
-  Day 1
-  #######
-
-  Lessons
-  =======
-  .. csv-table:: 
-    :file: csv_tables/day1.csv
-    :header-rows: 1
-
-  Discussions and Assignments
-  ===========================
-  .. csv-table:: 
-    :file: csv_tables/day1_assignments.csv  
-    :header-rows: 1
-
-
   Day 2
   #######
 
