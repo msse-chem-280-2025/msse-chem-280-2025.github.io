@@ -27,7 +27,7 @@ You must submit to **two separate assignments** on bCourses:
 - This should be a PR where you left review comments
 - Example: `https://github.com/msse-chem-280-2025/periodic-table/pull/456`
 
-**Note:** Your pull request does not need to be merged before these submission deadlines.
+**Note:** Your pull request does not need to be merged before you submit the URL on bCourses, but should be merged by tomorrow's class.
 
 ## Group Assignment 1 Rubric
 
