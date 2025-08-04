@@ -5,13 +5,29 @@ For this homework assignment, you will be collaborating with the rest of the cla
 Follow the instructions in the [GitHub Collaboration lesson for contributing to a repository](collaboration) using an element you choose. 
 Make sure that you claim your element using a GitHub Issue before making your pull request.
 
-## Turning this assignment in
-In order to complete this assignment, you must:
-1. Complete the exercise linked above with your element of choice, including creating an issue and a pull request.
-2. Submit pull request to the central repository.
-3. Review a teammate's pull request. When you review, you should leave at least one comment. **Make sure that they have included information about their chosen element, and make sure that they have the proper page header and file name!**
-4. Turn your assignments in on bCourses. You will turn in the URL of your pull request and review, so your change does not have to be merged yet to be complete.
-5. Have your pull request approved and merged to the main repository (this can happen after you submit your bCourses link)
+## Review Checklist
+When reviewing a classmate's pull request, verify they:
+- [ ] Created the file in the correct `elements/` directory
+- [ ] Used proper file naming: `element_name.md` (lowercase)
+- [ ] Included the required page header with `layout: page` and `title:`
+- [ ] Added at least 3 sentences of information about their element
+- [ ] Used clear, descriptive commit messages
+
+Leave specific, constructive feedback. If changes are needed, request changes and explain what should be improved.
+
+## bCourses Submissions
+You must submit to **two separate assignments** on bCourses:
+
+### Assignment 1: Your Pull Request
+- Submit the URL of the pull request you created for your element
+- Example: `https://github.com/msse-chem-280-2025/periodic-table/pull/123`
+
+### Assignment 2: Your Pull Request Review  
+- Submit the URL of the pull request you reviewed (a classmate's PR)
+- This should be a PR where you left review comments
+- Example: `https://github.com/msse-chem-280-2025/periodic-table/pull/456`
+
+**Note:** Your pull request does not need to be merged before these submission deadlines.
 
 ## Group Assignment 1 Rubric
 
