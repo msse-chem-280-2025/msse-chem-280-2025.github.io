@@ -46,7 +46,7 @@ Click the "Branches" tab.
 You will see a heading which says "Branch protection rule". 
 Adding the name of a branch here will make it a "protected branch" and the rules you choose in the section below will protect the branch (under the heading "protect matching branches"). 
 For example, you may want to choose to protect the `main` branch so that pull requests and reviews are required to change the branch. 
-This way, your collaborators will not be able to push to the main branch, and must submit a `pull request` more on this later in order for their changes to be incorporated. 
+This way, your collaborators will not be able to push to the main branch, and must submit a `pull request` (more on this later) in order for their changes to be incorporated. 
 You can read more about [branch protection](https://help.github.com/en/enterprise/2.18/admin/developer-workflow/configuring-protected-branches-and-required-status-checks#enabling-a-protected-branch-for-a-repository).
 
 ### Pull Requests - Branch and Pull Request (PR)
@@ -111,9 +111,9 @@ Total 3 (delta 2), reused 0 (delta 0)
 remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 remote: 
 remote: Create a pull request for 'collab_instructions' on GitHub by visiting:
-remote:      https://github.com/YOUR_USERNAME/molecool/pull/new/collab_instructions
+remote:      https://github.com/YOUR_USERNAME/git-lesson/pull/new/collab_instructions
 remote: 
-To https://github.com/YOUR_USERNAME/molecool.git
+To https://github.com/YOUR_USERNAME/git-lesson.git
  * [new branch]      collab_instructions -> collab_instructions
 ```
 ````
@@ -135,10 +135,10 @@ Since you are looking at your own PR, you won't be able to "Approve" if you have
 During this section, we will all start from central repository where we are listed as collaborators, make changes, then submit something called a Pull Request to have those changes incorporated into the code. 
 We will leave the package we are developing for this section.
 
-Navigate to the URL https://github.com/msse-chem-280-2024/periodic-table in your web browser. 
+Navigate to the URL https://github.com/msse-chem-280-2025/periodic-table in your web browser. 
 You should see a GitHub repo. 
 This repository contains code to make a website which has the periodic table. 
-View the website https://msse-chem-280-2024.github.io/periodic-table/ . 
+View the website https://msse-chem-280-2025.github.io/periodic-table/ . 
 On the website page, elements which appear with a blue background and gold text have a page and information filled in. 
 When you view the site initially, there will not be any elements filled in.
 However, as you and your classmates have merged pull requests, there will be more elements filled in.
@@ -177,7 +177,7 @@ Next, clone the repository to your computer.
 ````{tab-set-code} 
 
 ```{code-block} shell
-git clone git@github.com:msse-chem-280-2024/periodic-table.git
+git clone git@github.com:msse-chem-280-2025/periodic-table.git
 cd periodic-table
 ```
 ````
@@ -280,7 +280,7 @@ As part of the output from this command, you should see the following:
 ```{code-block} output
 remote:
 remote: Create a pull request for 'sodium' on GitHub by visiting:
-remote:      https://github.com/msse-2024-bootcamp/periodic-table/pull/new/sodium
+remote:      https://github.com/msse-chem-280-2025/periodic-table/pull/new/sodium
 remote:
 ```
 ````

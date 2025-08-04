@@ -51,7 +51,7 @@ Now, follow the instructions on GitHub under "...or push an existing repository 
 ````{tab-set-code} 
 
 ```{code-block} shell
-git remote add origin git@github.com:github.com/YOUR_GITHUB_USERNAME/git-lesson.git
+git remote add origin git@github.com:YOUR_GITHUB_USERNAME/git-lesson.git
 git branch -M main
 git push -u origin main
 ```
@@ -351,7 +351,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
 
 The push failed, because the `copy` clone is not up-to-date with the repository on GitHub.
-The changes you made were not compatible with the updated version of the projectt.
+The changes you made were not compatible with the updated version of the project.
 We can fix this by doing a pull:
 
 ````{tab-set-code} 

@@ -629,7 +629,7 @@ Next, commit this change:
 ````{tab-set-code} 
 
 ```{code-block} shell
-git add hello_world.py
+git add quotes.py
 git commit -m "add function to print Hello World."
 ```
 ````
@@ -795,7 +795,7 @@ Commit your .gitignore to the repository.
 ````{tab-set-code}
 ```{code-block} shell
 git add .gitignore
-git commit -m "add gitignore to repository
+git commit -m "add gitignore to repository"
 ```
 ````
 
