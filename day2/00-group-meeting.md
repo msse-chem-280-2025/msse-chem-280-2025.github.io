@@ -25,7 +25,8 @@ Next, click the linke below to start your group repository.
 The first person who clicks the link will enter your group name.
 Other members will be able to choose the team once it exists.
 
-Start your group repository, [click this link](https://classroom.github.com/a/SzcOh_yv).
+Do NOT click the link in the following sentence before class starts and you are in your group.
+Start your group repository, [click this link](https://classroom.github.com/a/VIMFCDSA). 
 The first person who clicks this link will be responsible for putting a team name. 
 Each person who clicks the link after will be able to join the team.
 
