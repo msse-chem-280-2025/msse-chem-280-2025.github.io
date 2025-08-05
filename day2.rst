@@ -32,3 +32,4 @@ Discussions and Assignments
    :maxdepth: 1
 
    day2/group-assignment
+   individual-assignments/individual-assignment-1
