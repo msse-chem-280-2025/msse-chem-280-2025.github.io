@@ -58,6 +58,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'day2/01-MC-pi';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="The Lennard Jones Equation" href="02-LJ-eqn.html" />
+    <link rel="prev" title="Meet your group" href="00-group-meeting.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -158,7 +160,7 @@
 </li>
 
 
-<li class="nav-item ">
+<li class="nav-item current active">
   <a class="nav-link nav-internal" href="../day2.html">
     Day 2
   </a>
@@ -287,10 +289,8 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -319,7 +319,7 @@
 </li>
 
 
-<li class="nav-item ">
+<li class="nav-item current active">
   <a class="nav-link nav-internal" href="../day2.html">
     Day 2
   </a>
@@ -403,6 +403,23 @@
     
   </div>
   
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="00-group-meeting.html">Meet your group</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Introduction to Monte Carlo Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02-LJ-eqn.html">The Lennard Jones Equation</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="group-assignment.html">Day 2 - Group Assignment</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
       <div class="sidebar-primary-item">
@@ -438,6 +455,9 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
+    
+    <li class="breadcrumb-item"><a href="../day2.html" class="nav-link">Day 2</a></li>
+    
     <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Introduction to Monte Carlo Methods</span></li>
   </ul>
 </nav>
@@ -497,9 +517,9 @@ Later in the course, we will see Monte Carlo applied to high dimensional integra
 <section id="procedure">
 <h3>Procedure<a class="headerlink" href="#procedure" title="Link to this heading">#</a></h3>
 <p>In order to use MC for a funtion, we will generate random points on our interval of interest.
-For high-dimensional functions, this domain is sometimes informally referred to as the []”phase space,”](https://en.wikipedia.org/wiki/Phase_space) particularly in fields like physics or statistical mechanics.</p>
+For high-dimensional functions, this domain is sometimes informally referred to as the <a class="reference external" href="https://en.wikipedia.org/wiki/Phase_space">“phase space,”</a> particularly in fields like physics or statistical mechanics.</p>
 <ul class="simple">
-<li><p>Generate a set of uniformly distributed random points (<span class="math notranslate nohighlight">\(N_{trial}) over the area of interest, \)</span>A_{tested}<span class="math notranslate nohighlight">\(. For example, if we were to evaluate a generic function \)</span>f(x)<span class="math notranslate nohighlight">\( over -3 to 3 in the x dimension and 0 to 3 in the y dimension, \)</span>A_{tested} = 6 * 3 = 18$</p></li>
+<li><p>Generate a set of uniformly distributed random points (<span class="math notranslate nohighlight">\(N_{trial}\)</span>) over the area of interest, <span class="math notranslate nohighlight">\(A_{tested}\)</span>. For example, if we were to evaluate a generic function <span class="math notranslate nohighlight">\(f(x)\)</span> over -3 to 3 in the x dimension and 0 to 3 in the y dimension, <span class="math notranslate nohighlight">\(A_{tested} = 6 * 3 = 18\)</span></p></li>
 <li><p>Count the number of points that fall underneath the curve <span class="math notranslate nohighlight">\(f(x)\)</span>.
 This number, is <span class="math notranslate nohighlight">\(N_{accept}\)</span> in the equation below.
 With a large number of points, dividing the number of points under the curve to the total number of points will give you the ratio of the area under the curve to the total area tested.</p></li>
@@ -531,6 +551,27 @@ A_{curve} = \frac{N_{accept}}{N_{trial}} * A_{tested}
 </section>
 <section id="writing-our-mc-code">
 <h2>Writing our MC code<a class="headerlink" href="#writing-our-mc-code" title="Link to this heading">#</a></h2>
+<p>To start programming, start a Jupyter notebook.
+A Jupyter notebook is a development interface that is made up of “cells”.
+Cells can contain code or text, allowing for programming and explanation to be grouped together.
+You can <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter">install the Jupyter extension</a> to add Jupyter notebook tools to Visual Studio Code.</p>
+<p>Create a file in VSCode called <code class="docutils literal notranslate"><span class="pre">LASTNAME_md_integration.ipynb</span></code>.
+Make the top cell a mark down cell and type the following</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># Calculation of $\pi$
+
+This notebook will use Monte Carlo integration to calculate the value of $\pi$ using a unit circle.
+
+Procedure:
+
+1. Start with a count of points inside the circle set to 0.
+2. Generate a random point on the range (0, 1).
+3. Determine if the point lies witin the unit circle.
+4. If inside the cirlce, increase the counter.
+5. Repeat steps -204 for desired number of samples.
+6. Calculate the ratio of points under the curve vs. the total number of points.
+
+</pre></div>
+</div>
 <p>To generate our random points, we will use the Python module <a class="reference external" href="https://docs.python.org/3/library/random.html"><code class="docutils literal notranslate"><span class="pre">random</span></code></a>. The <code class="docutils literal notranslate"><span class="pre">random</span></code> library has functions related to random number generation.</p>
 <p>We will also be using Python’s built in <a class="reference external" href="https://docs.python.org/3/library/math.html"><code class="docutils literal notranslate"><span class="pre">math</span></code></a> module for operations like raising numbers to powers and accessing a reference value for pi.</p>
 <p>First import the libraries:</p>
@@ -717,8 +758,8 @@ PYTHON</label><div class="sd-tab-content docutils">
 <p>Monte Carlo methods are numerical techniques
 frequently used to estimate complex multidimensional integrals which otherwise could not be performed. The idea of Monte Carlo integration is to estimate the value of an integral by generating random points from the probability density.</p>
 <p>For instance, the integral of the function <span class="math notranslate nohighlight">\(f(\textbf{x})\)</span>, where <span class="math notranslate nohighlight">\(\textbf{x} \in \Re^{M}\)</span>, is approximated as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7acc54ce-a848-4326-ba67-60a3a61fa812">
-<span class="eqno">(1)<a class="headerlink" href="#equation-7acc54ce-a848-4326-ba67-60a3a61fa812" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-0f2999c0-7088-481d-98e6-0dbd5e009d95">
+<span class="eqno">(1)<a class="headerlink" href="#equation-0f2999c0-7088-481d-98e6-0dbd5e009d95" title="Permalink to this equation">#</a></span>\[\begin{equation}
     I = \int_V f(\textbf{x}) \, d\textbf{x} = \int_V
     \frac{f(\textbf{x})}{h(\textbf{x})} h(\textbf{x}) \, d\textbf{x} 
     = \left&lt; \frac{f(\textbf{x})}{h(\textbf{x})} \right&gt;_{h(\textbf{x})}
@@ -732,14 +773,14 @@ generating random samples of <span class="math notranslate nohighlight">\(\textb
 distribution
 <span class="math notranslate nohighlight">\(h(\textbf{x})\)</span>. The simplest case is to uniformly generate <span class="math notranslate nohighlight">\(\textbf{x}\)</span>
 in the volume (<span class="math notranslate nohighlight">\(V\)</span>). In this way, <span class="math notranslate nohighlight">\(h(\textbf{x})\)</span> becomes constant as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1833dc58-cf43-40e5-8bc9-d3d780dd3d40">
-<span class="eqno">(2)<a class="headerlink" href="#equation-1833dc58-cf43-40e5-8bc9-d3d780dd3d40" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-3429912d-fdb3-4bb6-a130-696f0ed4a88e">
+<span class="eqno">(2)<a class="headerlink" href="#equation-3429912d-fdb3-4bb6-a130-696f0ed4a88e" title="Permalink to this equation">#</a></span>\[\begin{equation}
 	h(\textbf{x}) = \frac{1}{V}
 	\label{eq.uniformDist}
 \end{equation}\]</div>
 <p>Using this sampling density <span class="math notranslate nohighlight">\(h(\textbf{x})\)</span>, the integral becomes</p>
-<div class="amsmath math notranslate nohighlight" id="equation-67ed1f9e-d4e2-4bd5-a8fd-d43ad4ff868e">
-<span class="eqno">(3)<a class="headerlink" href="#equation-67ed1f9e-d4e2-4bd5-a8fd-d43ad4ff868e" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-4194502d-e46d-44ce-b225-4e766cac290f">
+<span class="eqno">(3)<a class="headerlink" href="#equation-4194502d-e46d-44ce-b225-4e766cac290f" title="Permalink to this equation">#</a></span>\[\begin{equation}
 	I = \int_V f(\textbf{x}) \, d\textbf{x} \approx \frac{V}{N} \sum_{i=1}^N
 	f(\textbf{x}_i)
 	\label{eq.averageUniform}
@@ -766,6 +807,24 @@ integrand evaluated using the <span class="math notranslate nohighlight">\(i^{th
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="00-group-meeting.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Meet your group</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="02-LJ-eqn.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">The Lennard Jones Equation</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               

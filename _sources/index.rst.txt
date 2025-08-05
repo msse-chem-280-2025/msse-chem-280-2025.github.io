@@ -47,19 +47,19 @@ Warm-Up
 =======
 `Group Meeting <day2/00-group-meeting.html>`_
 
+Lessons
+=======
+.. csv-table:: 
+  :file: csv_tables/day2.csv
+  :header-rows: 1
+
+Discussions and Assignments
+===========================
+.. csv-table:: 
+  :file: csv_tables/day2_assignments.csv  
+  :header-rows: 1
+
 ..
-  Lessons
-  =======
-  .. csv-table:: 
-    :file: csv_tables/day2.csv
-    :header-rows: 1
-
-  Discussions and Assignments
-  ===========================
-  .. csv-table:: 
-    :file: csv_tables/day2_assignments.csv  
-    :header-rows: 1
-
   Day 3
   #######
 
