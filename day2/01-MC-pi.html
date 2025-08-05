@@ -152,22 +152,22 @@
 
 
 <li class="nav-item ">
+  <a class="nav-link nav-internal" href="../day1.html">
+    Day 1
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../day2.html">
+    Day 2
+  </a>
+</li>
+
+
+<li class="nav-item ">
   <a class="nav-link nav-external" href="https://msse.berkeley.edu/">
     MSSE
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-external" href="https://msse-chem-280-2023.github.io/git-cheat-sheet/">
-    Git Cheat Sheet
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-external" href="https://www.nist.gov/mml/csd/chemical-informatics-group/lennard-jones-fluid-reference-calculations-cuboid-cell">
-    NIST LJ Reference
   </a>
 </li>
 
@@ -179,6 +179,20 @@
                 </button>
                 <ul id="pst-nav-more-links" class="dropdown-menu">
                     
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://msse-chem-280-2023.github.io/git-cheat-sheet/">
+    Git Cheat Sheet
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://www.nist.gov/mml/csd/chemical-informatics-group/lennard-jones-fluid-reference-calculations-cuboid-cell">
+    NIST LJ Reference
+  </a>
+</li>
+
+
 <li class=" ">
   <a class="nav-link dropdown-item nav-external" href="https://mmlapps.nist.gov/srs/LJ_PURE/mc.htm">
     NIST MC Isotherms
@@ -294,6 +308,20 @@
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../setup.html">
     Computer Set-Up
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../day1.html">
+    Day 1
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../day2.html">
+    Day 2
   </a>
 </li>
 
@@ -689,8 +717,8 @@ PYTHON</label><div class="sd-tab-content docutils">
 <p>Monte Carlo methods are numerical techniques
 frequently used to estimate complex multidimensional integrals which otherwise could not be performed. The idea of Monte Carlo integration is to estimate the value of an integral by generating random points from the probability density.</p>
 <p>For instance, the integral of the function <span class="math notranslate nohighlight">\(f(\textbf{x})\)</span>, where <span class="math notranslate nohighlight">\(\textbf{x} \in \Re^{M}\)</span>, is approximated as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b19d0dda-f30d-4aaa-94c1-ce22eb2eed21">
-<span class="eqno">(1)<a class="headerlink" href="#equation-b19d0dda-f30d-4aaa-94c1-ce22eb2eed21" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-7acc54ce-a848-4326-ba67-60a3a61fa812">
+<span class="eqno">(1)<a class="headerlink" href="#equation-7acc54ce-a848-4326-ba67-60a3a61fa812" title="Permalink to this equation">#</a></span>\[\begin{equation}
     I = \int_V f(\textbf{x}) \, d\textbf{x} = \int_V
     \frac{f(\textbf{x})}{h(\textbf{x})} h(\textbf{x}) \, d\textbf{x} 
     = \left&lt; \frac{f(\textbf{x})}{h(\textbf{x})} \right&gt;_{h(\textbf{x})}
@@ -704,14 +732,14 @@ generating random samples of <span class="math notranslate nohighlight">\(\textb
 distribution
 <span class="math notranslate nohighlight">\(h(\textbf{x})\)</span>. The simplest case is to uniformly generate <span class="math notranslate nohighlight">\(\textbf{x}\)</span>
 in the volume (<span class="math notranslate nohighlight">\(V\)</span>). In this way, <span class="math notranslate nohighlight">\(h(\textbf{x})\)</span> becomes constant as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-893d5480-34c9-44ad-969d-8b0a1e00ed95">
-<span class="eqno">(2)<a class="headerlink" href="#equation-893d5480-34c9-44ad-969d-8b0a1e00ed95" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-1833dc58-cf43-40e5-8bc9-d3d780dd3d40">
+<span class="eqno">(2)<a class="headerlink" href="#equation-1833dc58-cf43-40e5-8bc9-d3d780dd3d40" title="Permalink to this equation">#</a></span>\[\begin{equation}
 	h(\textbf{x}) = \frac{1}{V}
 	\label{eq.uniformDist}
 \end{equation}\]</div>
 <p>Using this sampling density <span class="math notranslate nohighlight">\(h(\textbf{x})\)</span>, the integral becomes</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ade63113-df86-4cf9-b164-7fb2218e9ce5">
-<span class="eqno">(3)<a class="headerlink" href="#equation-ade63113-df86-4cf9-b164-7fb2218e9ce5" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-67ed1f9e-d4e2-4bd5-a8fd-d43ad4ff868e">
+<span class="eqno">(3)<a class="headerlink" href="#equation-67ed1f9e-d4e2-4bd5-a8fd-d43ad4ff868e" title="Permalink to this equation">#</a></span>\[\begin{equation}
 	I = \int_V f(\textbf{x}) \, d\textbf{x} \approx \frac{V}{N} \sum_{i=1}^N
 	f(\textbf{x}_i)
 	\label{eq.averageUniform}

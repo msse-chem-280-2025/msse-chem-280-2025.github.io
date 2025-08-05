@@ -8,22 +8,29 @@ Next, we will start learning about how molecular systems are modeled on a comput
 An equation called the "Lennard Jones equation" is commonly used to model non-bonded interactions of molecules. 
 The Lennard Jones equation will be introduced and discussed today.
 
-Lessons
--------
-.. csv-table:: 
-  :file: csv_tables/day2.csv
-  :header-rows: 1
-
 .. toctree::
    :maxdepth: 1
    :hidden:
 
    day2/00-group-meeting
 
-Discussions and Assignments
----------------------------
-.. toctree::
-   :maxdepth: 1
+Warm-Up
+-------
+`Group Meeting <day2/00-group-meeting.html>`_
 
-   individual-assignments/individual-assignment-1
-   day2/group-assignment
+..
+   Lessons
+   -------
+   .. csv-table:: 
+   :file: csv_tables/day2.csv
+   :header-rows: 1
+
+
+
+   Discussions and Assignments
+   ---------------------------
+   .. toctree::
+      :maxdepth: 1
+
+      individual-assignments/individual-assignment-1
+      day2/group-assignment

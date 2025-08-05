@@ -7,6 +7,16 @@ control, documentation, and testing.
 Central to this course is a hands-on molecular simulation project
 where students work in groups to create a software package using concepts taught in the course.
 
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :titlesonly:
+
+   setup
+   day1
+   day2
+
+
 Pre-Bootcamp: Set-Up
 ####################
 .. csv-table:: 
@@ -29,10 +39,15 @@ Discussions and Assignments
   :file: csv_tables/day1_assignments.csv  
   :header-rows: 1
 
-..
-  Day 2
-  #######
 
+Day 2
+#######
+
+Warm-Up
+=======
+`Group Meeting <day2/00-group-meeting.html>`_
+
+..
   Lessons
   =======
   .. csv-table:: 
@@ -152,9 +167,4 @@ Discussions and Assignments
     :file: csv_tables/day9_assignments.csv  
     :header-rows: 1
 
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-   :titlesonly:
 
-   setup
