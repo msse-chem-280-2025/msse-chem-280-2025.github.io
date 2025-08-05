@@ -41,9 +41,9 @@ Later in the course, we will see Monte Carlo applied to high dimensional integra
 ### Procedure
 
 In order to use MC for a funtion, we will generate random points on our interval of interest.
-For high-dimensional functions, this domain is sometimes informally referred to as the []"phase space,"](https://en.wikipedia.org/wiki/Phase_space) particularly in fields like physics or statistical mechanics.
+For high-dimensional functions, this domain is sometimes informally referred to as the ["phase space,"](https://en.wikipedia.org/wiki/Phase_space) particularly in fields like physics or statistical mechanics.
 
-* Generate a set of uniformly distributed random points ($N_{trial}) over the area of interest, $A_{tested}$. For example, if we were to evaluate a generic function $f(x)$ over -3 to 3 in the x dimension and 0 to 3 in the y dimension, $A_{tested} = 6 * 3 = 18$
+* Generate a set of uniformly distributed random points ($N_{trial}$) over the area of interest, $A_{tested}$. For example, if we were to evaluate a generic function $f(x)$ over -3 to 3 in the x dimension and 0 to 3 in the y dimension, $A_{tested} = 6 * 3 = 18$
 
 * Count the number of points that fall underneath the curve $f(x)$.
 This number, is $N_{accept}$ in the equation below. 
@@ -81,6 +81,30 @@ $$
 $$
 
 ## Writing our MC code
+
+To start programming, start a Jupyter notebook.
+A Jupyter notebook is a development interface that is made up of "cells". 
+Cells can contain code or text, allowing for programming and explanation to be grouped together.
+You can [install the Jupyter extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) to add Jupyter notebook tools to Visual Studio Code.
+
+Create a file in VSCode called `LASTNAME_md_integration.ipynb`. 
+Make the top cell a mark down cell and type the following
+
+```
+# Calculation of $\pi$
+
+This notebook will use Monte Carlo integration to calculate the value of $\pi$ using a unit circle.
+
+Procedure:
+
+1. Start with a count of points inside the circle set to 0.
+2. Generate a random point on the range (0, 1).
+3. Determine if the point lies witin the unit circle.
+4. If inside the cirlce, increase the counter.
+5. Repeat steps -204 for desired number of samples.
+6. Calculate the ratio of points under the curve vs. the total number of points.
+
+```
 
 To generate our random points, we will use the Python module [`random`](https://docs.python.org/3/library/random.html). The `random` library has functions related to random number generation.
 

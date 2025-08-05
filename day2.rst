@@ -13,24 +13,22 @@ The Lennard Jones equation will be introduced and discussed today.
    :hidden:
 
    day2/00-group-meeting
+   day2/01-MC-pi
+   day2/02-LJ-eqn
 
 Warm-Up
 -------
 `Group Meeting <day2/00-group-meeting.html>`_
 
-..
-   Lessons
-   -------
-   .. csv-table:: 
-   :file: csv_tables/day2.csv
-   :header-rows: 1
+Lessons
+-------
+.. csv-table:: 
+:file: csv_tables/day2.csv
+:header-rows: 1
 
+Discussions and Assignments
+---------------------------
+.. toctree::
+   :maxdepth: 1
 
-
-   Discussions and Assignments
-   ---------------------------
-   .. toctree::
-      :maxdepth: 1
-
-      individual-assignments/individual-assignment-1
-      day2/group-assignment
+   day2/group-assignment
