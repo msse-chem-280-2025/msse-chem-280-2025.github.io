@@ -15,6 +15,7 @@ where students work in groups to create a software package using concepts taught
    setup
    day1
    day2
+   day3
 
 
 Pre-Bootcamp: Set-Up
@@ -59,22 +60,23 @@ Discussions and Assignments
   :file: csv_tables/day2_assignments.csv  
   :header-rows: 1
 
+
+Day 3
+#######
+
+Lessons
+=======
+.. csv-table:: 
+  :file: csv_tables/day3.csv
+  :header-rows: 1
+
+Discussions and Assignments
+===========================
+.. csv-table:: 
+  :file: csv_tables/day3_assignments.csv  
+  :header-rows: 1
+
 ..
-  Day 3
-  #######
-
-  Lessons
-  =======
-  .. csv-table:: 
-    :file: csv_tables/day3.csv
-    :header-rows: 1
-
-  Discussions and Assignments
-  ===========================
-  .. csv-table:: 
-    :file: csv_tables/day3_assignments.csv  
-    :header-rows: 1
-
   Day 4
   #######
 
