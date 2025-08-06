@@ -19,7 +19,6 @@ Lessons
 
    day3/00-group-meeting
    day3/01-LJ-system
-   day3/02-computational-tricks
 
 Discussions and Assignments
 ---------------------------
