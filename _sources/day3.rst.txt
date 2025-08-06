@@ -26,5 +26,4 @@ Discussions and Assignments
 .. toctree::
    :maxdepth: 1
    
-   individual-assignments/individual-assignment-1
    day3/group-assignment
