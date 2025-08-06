@@ -168,8 +168,8 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-external" href="https://msse.berkeley.edu/">
-    MSSE
+  <a class="nav-link nav-internal" href="../day3.html">
+    Day 3
   </a>
 </li>
 
@@ -181,6 +181,13 @@
                 </button>
                 <ul id="pst-nav-more-links" class="dropdown-menu">
                     
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://msse.berkeley.edu/">
+    MSSE
+  </a>
+</li>
+
+
 <li class=" ">
   <a class="nav-link dropdown-item nav-external" href="https://msse-chem-280-2023.github.io/git-cheat-sheet/">
     Git Cheat Sheet
@@ -322,6 +329,13 @@
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="../day2.html">
     Day 2
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../day3.html">
+    Day 3
   </a>
 </li>
 
@@ -759,8 +773,8 @@ PYTHON</label><div class="sd-tab-content docutils">
 <p>Monte Carlo methods are numerical techniques
 frequently used to estimate complex multidimensional integrals which otherwise could not be performed. The idea of Monte Carlo integration is to estimate the value of an integral by generating random points from the probability density.</p>
 <p>For instance, the integral of the function <span class="math notranslate nohighlight">\(f(\textbf{x})\)</span>, where <span class="math notranslate nohighlight">\(\textbf{x} \in \Re^{M}\)</span>, is approximated as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d9f2d36d-5402-40b7-9e1c-54b3772a16ec">
-<span class="eqno">(1)<a class="headerlink" href="#equation-d9f2d36d-5402-40b7-9e1c-54b3772a16ec" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-f81dc5db-0718-4786-afb0-b2cef27c70fd">
+<span class="eqno">(1)<a class="headerlink" href="#equation-f81dc5db-0718-4786-afb0-b2cef27c70fd" title="Permalink to this equation">#</a></span>\[\begin{equation}
     I = \int_V f(\textbf{x}) \, d\textbf{x} = \int_V
     \frac{f(\textbf{x})}{h(\textbf{x})} h(\textbf{x}) \, d\textbf{x} 
     = \left&lt; \frac{f(\textbf{x})}{h(\textbf{x})} \right&gt;_{h(\textbf{x})}
@@ -774,14 +788,14 @@ generating random samples of <span class="math notranslate nohighlight">\(\textb
 distribution
 <span class="math notranslate nohighlight">\(h(\textbf{x})\)</span>. The simplest case is to uniformly generate <span class="math notranslate nohighlight">\(\textbf{x}\)</span>
 in the volume (<span class="math notranslate nohighlight">\(V\)</span>). In this way, <span class="math notranslate nohighlight">\(h(\textbf{x})\)</span> becomes constant as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f5291d7b-096a-45fc-a4f0-fd2b770a7bea">
-<span class="eqno">(2)<a class="headerlink" href="#equation-f5291d7b-096a-45fc-a4f0-fd2b770a7bea" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-a09592f9-aaf1-4d3b-a311-5b514d44d0b0">
+<span class="eqno">(2)<a class="headerlink" href="#equation-a09592f9-aaf1-4d3b-a311-5b514d44d0b0" title="Permalink to this equation">#</a></span>\[\begin{equation}
 	h(\textbf{x}) = \frac{1}{V}
 	\label{eq.uniformDist}
 \end{equation}\]</div>
 <p>Using this sampling density <span class="math notranslate nohighlight">\(h(\textbf{x})\)</span>, the integral becomes</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2fb61d2b-fe56-45d4-baa5-944d01b92f23">
-<span class="eqno">(3)<a class="headerlink" href="#equation-2fb61d2b-fe56-45d4-baa5-944d01b92f23" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-8c223fb6-f84f-4381-9c6a-055c78b6b835">
+<span class="eqno">(3)<a class="headerlink" href="#equation-8c223fb6-f84f-4381-9c6a-055c78b6b835" title="Permalink to this equation">#</a></span>\[\begin{equation}
 	I = \int_V f(\textbf{x}) \, d\textbf{x} \approx \frac{V}{N} \sum_{i=1}^N
 	f(\textbf{x}_i)
 	\label{eq.averageUniform}
