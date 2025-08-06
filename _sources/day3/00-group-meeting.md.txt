@@ -1,16 +1,20 @@
 # Python Warm Up & Returning to the LJ Equation
 
-To start class today, we will spend about 20 minutes reviewing Python concepts, and another half hour working with the Lennard Jones equation.
+To start class today, we will spend about half an hour reviewing Python concepts, and another half hour working with the Lennard Jones equation.
 
 
 ## Python Review
 
-Pick a chapter from the e-book [Think Python](https://greenteapress.com/thinkpython/html/index.html). 
+Pick a chapter from the e-book [Think Python](https://allendowney.github.io/ThinkPython/). 
 To pick your chapter, read the topics and one you think you'd like to know more about. 
-To complete the activity, go into the break out room for the chapter you pick.
-Read the chapter for about 20 minutes. As you read, take note of at least four new or interesting points. 
-If you have any questions, or if anything is unclear, make a note of that also.
-During the last 5 minutes of the Python Review, each group should share their observations on the [class Google Slide Presentation](https://docs.google.com/presentation/d/13b2208ItU8VLqdxMI1ovSCl0Ll3aIYy6CdWZUZi5LxA/edit?usp=sharing)]. (You must be logged into your UC Berkeley account to view the presentation.)
+You have a quiz due at 9:35 AM with your observations from the textbook.
+
+For the first part, we will all be in the main area. 
+
+1. Add your name ot the [class Google Slide Presentation](https://docs.google.com/presentation/d/1wvhMZ0gUMV_UjCSfmSjz2GBiXnmtRPAphe8iiYoCDH4/edit?usp=sharing)] on the slide corresponding to your chosen chapter. (You must be logged into your UC Berkeley account to view the presentation.)
+2. Spend 20 minutes or so reading independently. As you read, take note of three useful or interesting facts, or things you didn't know before.
+2. **Take the quiz on bCourses by 9:35 AM.** You should record the facts you wrote from (1) on this quiz (this is the only question)
+3. After 9:35 AM, we will move into breakout rooms. Spend 10 minutes discussing the chapter with your group. Record your group observations on the [class Google Slide Presentation](https://docs.google.com/presentation/d/1wvhMZ0gUMV_UjCSfmSjz2GBiXnmtRPAphe8iiYoCDH4/edit?usp=sharing)].  
 
 ## Calculation of Lennard Jones Energy for System of Particles
 
