@@ -16,7 +16,16 @@ Make sure all pull requests from Day 3 are merged and you've pulled the changes 
 Create a Jupyter notebook for today's lecture in your Day 4 folder, named with your first and last name.
 Create a markdown cell with a title.
 Then, make a code cell with your group's tail correction function (make the function name be `calculate_tail_correction`). 
-Also add the following code:
+
+Gather your functions in one cell:
+
+* `calculate_LJ`
+* `calculate_distance` (accounting for periodic boundaries)
+* `calculate_total_energy`
+* `read_xyz`
+* `calculate_tail_correction`
+
+If you need any functions, you can use these below
 
 ````{tab-set-code}
 
@@ -135,7 +144,7 @@ def calculate_tail_correction(arguments):
 ```
 ````
 
-In the class [Google Presentation](https://docs.google.com/presentation/d/13b2208ItU8VLqdxMI1ovSCl0Ll3aIYy6CdWZUZi5LxA/edit?usp=sharing) write an explanation of changes to our `calculate_distance` function and our `calculate_total_energy` function under the section "Code Difference Explanation" at the end of the document. 
+In the class [Google Presentation](https://docs.google.com/presentation/d/1wvhMZ0gUMV_UjCSfmSjz2GBiXnmtRPAphe8iiYoCDH4/edit?usp=sharing) write an explanation of changes to our `calculate_distance` function and our `calculate_total_energy` function under the section "Code Difference Explanation" at the end of the document. 
 Add a slide with your group name and your explanation.
 
 If you need a `calculate_tail_correction` function, use this one:
