@@ -33,6 +33,7 @@ Discussions and Assignments
 
    day5/00-group-meeting
    day5/group-assignment
+   individual-assignments/individual-assignment-2
 
    
    
