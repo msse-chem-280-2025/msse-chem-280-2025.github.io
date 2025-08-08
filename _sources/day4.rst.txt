@@ -22,6 +22,7 @@ Lessons
    :maxdepth: 1
    :hidden:
 
+   day4/00a-functions
    day4/01-total-energy-NIST
    day4/02-LJ-MC
 
