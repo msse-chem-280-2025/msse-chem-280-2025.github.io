@@ -1,8 +1,6 @@
 # Class Warm Up
 
-To start class, take the Warm Up Quiz under Day 5 on bCourses.
-
-After taking the quiz, please take the mid-course survey available on BCourses under the Day 5 module.
+Please take the mid-course survey available on BCourses under the Day 5 module.
 
 ## Activity: Debugging 
 
@@ -92,8 +90,50 @@ This part tells us that the error happened inside the calculate_average function
 To fix this error, you have a few options. 
 You might choose to check if a list is empty before calling the `calculate_average` function, or you might modify your function to handle the case of the list length being zero.
 
+### Traceback Walk‑through Example
+
+For the debugging exercise below, you will need to write an explanation of how you debugged. We ask that you do so in the following way.
+
+Read the traceback **from the bottom upward**. For each frame note:
+
+* **Observation** – what you literally see in the traceback
+* **Reasoning** – what that line means or implies
+* **Conclusion** – *this tells me* (the actionable insight)
+
+For example, for the bug we just walked through, you might write the following:
+
+1. **Bottom line of traceback**
+   **Observation:** `ZeroDivisionError: division by zero` occurred
+   **Reasoning:** This error is only raised when the denominator of `/` is `0`; nothing else triggers it.
+   **Conclusion (this tells me):** A divide‑by‑zero occurred somewhere above; move one frame up to locate the statement that performed the division.
+
+2. **One frame up (inside `calculate_average`)**
+   **Observation:** The error occurred on the line `average = total / count` 
+   **Reasoning:** This is the exact operation that attempted the division. This tells me my count was 0.
+   **Conclusion (this tells me):** : My count was zero for some reason. I should check where I am calculating count in the function and make sure it's correct. I should also check my function inputs to see if this is a special case.  If I look around this, I am calling `sum` and `len` on `numbers`. These should work as expected. My `len` of the list must be 0. 
+
+3. **Another frame up (call site)**
+   **Observation:** `print("Average of empty_data:", calculate_average(empty_data))`.
+   **Reasoning:** I should look at what `empty_data` is.
+   **Conclusion (this tells me):** I can see that `empty_data` is an empty list. This is a special case where my function doesn't work. I should either validate inputs at the call site (don’t call with empty sequences) or insert a check for this case in the function body.
+
+
+## Practice Debugging
+
 Practice debugging with the following code example.
 Write about your debugging process in the class [Google Presentation](https://docs.google.com/presentation/d/13b2208ItU8VLqdxMI1ovSCl0Ll3aIYy6CdWZUZi5LxA/edit?usp=sharing). How would you fix this problem?
+
+```python
+def calculate_average(numbers):
+      total = 0
+      count = 0
+      for num in numbers:
+            total += numbers
+      
+      average = total / count
+      return average
+```
+
 
 ```python
 def find_max(numbers):
