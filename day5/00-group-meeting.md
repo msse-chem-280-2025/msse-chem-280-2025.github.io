@@ -121,7 +121,7 @@ For example, for the bug we just walked through, you might write the following:
 ## Practice Debugging
 
 Practice debugging with the following code example.
-Write about your debugging process in the class [Google Presentation](https://docs.google.com/presentation/d/13b2208ItU8VLqdxMI1ovSCl0Ll3aIYy6CdWZUZi5LxA/edit?usp=sharing). How would you fix this problem?
+Write about your debugging process in the class [Google Presentation](https://docs.google.com/presentation/d/1wvhMZ0gUMV_UjCSfmSjz2GBiXnmtRPAphe8iiYoCDH4/edit?usp=sharing). Use the format given above to explain how to debug these problems. Add this to a slide on the class Google presentation.
 
 ```python
 def calculate_average(numbers):
