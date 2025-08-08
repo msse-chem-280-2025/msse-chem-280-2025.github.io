@@ -14,10 +14,6 @@ Objectives:
 - Avoid common mistakes related to variable naming and scope.
 ```
 
-## Lesson Slides
-
-Coming soon.
-
 ## Motivation – Understanding Functions and Scope
 
 Python functions are fundamental for organizing and reusing code. But misunderstanding how variables behave inside and outside functions can lead to confusing bugs. This lesson demonstrates function scope, global/local variable resolution, and the importance of `return` statements.
