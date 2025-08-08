@@ -4,6 +4,6 @@ This should be completed by each group member individually. **Individual assignm
 
 For this assignment, a full explanation is given in the assignment repository. 
 
-Please note that this assignment is much more difficult than individual assignment 1.
+Please note that this assignment is more difficult than individual assignment 1.
 
-[Click this link to accept the assignment](https://classroom.github.com/a/5rx3QpDP).
+[Click this link to accept the assignment](https://classroom.github.com/a/Bk95J5vt).
