@@ -137,6 +137,34 @@ languages. A discussion of build systems is beyond the scope of these lessons;
 our code can be build with a few commands, possibly saved inside a shell script.
 
 
+
+### Preprocessing
+
+There is one more intermediate step that happens before a source file is compiled. It is
+first run through a **preprocessor**. This step acts on lines that start with
+a \# sign. For example, this is how includes happen in C++
+
+
+```{image} ../fig/cpp/preprocessing.png
+:align: center
+```
+
+This is not limited to only including files, though. Preprocessor directives
+can be used to conditionally compile sections of code based on external factors
+or to implement a macro system.
+
+After preprocessing, a (temporary) file is created that is ready for true compilation. This
+is called a *translation unit*.
+
+
+```{admonition} Why would code be conditionally compiled?
+:class: discussion
+
+Conditional compilation is when sections of code are only somtimes compiled. Why would you
+ever want to do that?
+```
+
+
 ## Static typing
 
 One major difference between Python and C++ is that C++ is
