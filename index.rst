@@ -113,12 +113,11 @@ Discussions and Assignments
 Day 6
 #######
 
-..
-        Lessons
-        ========
-        .. csv-table:: 
-          :file: csv_tables/day6.csv
-          :header-rows: 1
+Lessons
+========
+.. csv-table:: 
+  :file: csv_tables/day6.csv
+  :header-rows: 1
 
 Discussions and Assignments
 ===========================
