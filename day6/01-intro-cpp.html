@@ -614,6 +614,23 @@ with lots of interconnected pieces, even written in multiple programming
 languages. A discussion of build systems is beyond the scope of these lessons;
 our code can be build with a few commands, possibly saved inside a shell script.</p>
 </section>
+<section id="preprocessing">
+<h3>Preprocessing<a class="headerlink" href="#preprocessing" title="Link to this heading">#</a></h3>
+<p>There is one more intermediate step that happens before a source file is compiled. It is
+first run through a <strong>preprocessor</strong>. This step acts on lines that start with
+a # sign. For example, this is how includes happen in C++</p>
+<img alt="../_images/preprocessing.png" class="align-center" src="../_images/preprocessing.png" />
+<p>This is not limited to only including files, though. Preprocessor directives
+can be used to conditionally compile sections of code based on external factors
+or to implement a macro system.</p>
+<p>After preprocessing, a (temporary) file is created that is ready for true compilation. This
+is called a <em>translation unit</em>.</p>
+<div class="discussion admonition">
+<p class="admonition-title">Why would code be conditionally compiled?</p>
+<p>Conditional compilation is when sections of code are only somtimes compiled. Why would you
+ever want to do that?</p>
+</div>
+</section>
 </section>
 <section id="static-typing">
 <h2>Static typing<a class="headerlink" href="#static-typing" title="Link to this heading">#</a></h2>
@@ -865,6 +882,7 @@ and there are many nuances not captured here.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#versions-of-c">Versions of C++</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compiled-languages">Compiled languages</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#compilation-and-linking">Compilation and linking</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing">Preprocessing</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#static-typing">Static typing</a></li>
