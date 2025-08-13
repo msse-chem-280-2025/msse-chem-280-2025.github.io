@@ -146,12 +146,11 @@ Lessons
 Day 8
 #######
 
-..
-  Lessons
-  ========
-  .. csv-table::
-    :file: csv_tables/day8.csv
-    :header-rows: 1
+Lessons
+========
+.. csv-table::
+  :file: csv_tables/day8.csv
+  :header-rows: 1
 
 Discussions and Assignments
 ===========================
