@@ -20,6 +20,7 @@ where students work in groups to create a software package using concepts taught
    day5
    day6
    day7
+   day8
 
 
 Pre-Bootcamp: Set-Up
@@ -142,22 +143,23 @@ Lessons
   :file: csv_tables/day7.csv
   :header-rows: 1
     
-..
-  Day 8
-  #######
+Day 8
+#######
 
+..
   Lessons
   ========
-  .. csv-table:: 
+  .. csv-table::
     :file: csv_tables/day8.csv
     :header-rows: 1
 
-  Discussions and Assignments
-  ===========================
-  .. csv-table:: 
-    :file: csv_tables/day8_assignments.csv  
-    :header-rows: 1
+Discussions and Assignments
+===========================
+.. csv-table::
+  :file: csv_tables/day8_assignments.csv
+  :header-rows: 1
 
+..
   Day 9
   #######
 
