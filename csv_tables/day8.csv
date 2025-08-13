@@ -1,4 +1,6 @@
 Lesson Title,Objectives,Questions
+`References <day8/01-references.html>`_,"* Learn about C++ references and how they differ from pointers","* When should I use references?
+* How does using reference improve performance?"
 `Function Calling and Arguments <day8/02-functions.html>`_,"* Learn about C++ functions and argument passing
 * Learn about the const keyword
 * Learn about returning multiple things from a function","* How do functions differ in C++ and Python?
