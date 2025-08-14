@@ -6,7 +6,7 @@ To start, consider the two code snippets.
 For each one, predict what you think the output will be before you run it.
 After you have made a prediction, run each one to check your answers.
 
-As you work through this discussion, record answers for your group in the [class Google Presentation](https://docs.google.com/presentation/d/13b2208ItU8VLqdxMI1ovSCl0Ll3aIYy6CdWZUZi5LxA/edit?usp=sharing)
+As you work through this discussion, record answers for your group in the [class Google Presentation](https://docs.google.com/presentation/d/1wvhMZ0gUMV_UjCSfmSjz2GBiXnmtRPAphe8iiYoCDH4/edit?usp=sharing).
 
 ````{tab-set-code} 
 
